@@ -885,3 +885,570 @@ public class project{
             else if(choice.equalsIgnoreCase("albedo's longsword")){
                 chp=7560000;
                 idc=20;
+}
+            else if(choice.equalsIgnoreCase("gouro's bow")){
+                chp=6950000;
+                idc=21;
+            }
+            else if(choice.equalsIgnoreCase("noele's greatsword")){
+                chp=8700000;
+                idc=22;
+            }
+            else if(choice.equalsIgnoreCase("ninguang's catbook")){
+                chp=8900000;
+                idc=23;
+            }
+            else if(choice.equalsIgnoreCase("zongli's polearm")){
+                chp=9999997;
+                idc=24;
+            }
+            else if(choice.equalsIgnoreCase("yun jin's bow")){
+                chp=87600000;
+                idc=25;
+            }
+            else if(choice.equalsIgnoreCase("keqing's longsword")){
+                chp=1000000;
+                idc=26;
+            }
+            else if(choice.equalsIgnoreCase("sara's bow")){
+                chp=6910000;
+                idc=27;
+            }
+            else if(choice.equalsIgnoreCase("beido's greatsword")){
+                chp=6920000;
+                idc=28;
+            }
+            else if(choice.equalsIgnoreCase("yae milo's catbook")){
+                chp=6930000;
+                idc=29;
+            }
+            else if(choice.equalsIgnoreCase("raiden shogan's polearm")){
+                chp=9999999;
+                idc=30;
+            }
+            else if(choice.equalsIgnoreCase("fischel's bow")){
+                chp=6960000;
+                idc=31;
+            }
+            else if (choice.equalsIgnoreCase("Kuki's longsword")) {
+                chp=6970000;
+                idc=32;}
+            else if (choice.equalsIgnoreCase("Collei's bow")) {
+                chp=6980000;
+                idc=33;}
+            else if (choice.equalsIgnoreCase("Acra's greatsword")){
+                chp=6850000;
+                idc=34;}
+            else if (choice.equalsIgnoreCase("Aranara's catabook")){
+                chp=6860000;
+                idc=35 ;}
+            else if (choice.equalsIgnoreCase("Arino's polearm")) {
+                chp=6870000;
+                idc=36;}
+            else{   
+                chp=6880000;
+                idc=37;}
+            hpsub=hp;
+            chpsub=chp;}
+        else if(p.euqalsIgnoreCase("1")){
+            if(oatk>0){
+                battlefield();
+            }
+            System.out.println("\f");
+
+            System.out.println("\f");
+            System.out.println("player 2:-Enter element");
+            System.out.println("Electro-1"+"\n"+"Cryo:-2"+"\n"+"Hydro:-3"+"\n"+"Pyro:-4"+"\n"+"Dendro:-5"+"\n"+"Geo:-6");
+            String element=sc.nextLine();
+            if(element.equalsIgnoreCase("4"))
+            {
+                weapon=pyro();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword")){
+                    chp=900000;
+                    oatk=5090;
+                    oes=80000;
+                    oqs=99999;
+                    idc=1 ;}
+                else if(weapon.equalsIgnoreCase("Benny's longsword")){
+                    chp=6000000;
+                    oatk=10000;
+                    oes=50000;
+                    oqs=95000;
+                    idc=2;}
+                else if (weapon.equalsIgnoreCase("Amber's bow")){
+                    chp=7500000;
+                    oatk=9500;
+                    oes=70000;
+                    oqs=98000;
+                    idc=3;}
+                else if (weapon.equalsIgnoreCase("Diluc's greatsword")){
+                    chp=1000000;
+                    oatk=70000;
+                    oes=99000;
+                    oqs=10000;
+                    idc=4;}
+                else if (weapon.equalsIgnoreCase("Yanfei's catabook")){
+                    chp=5000000;
+                    oatk=9990;
+                    oes=90000;
+                    oqs=98000;
+                    idc=5;}
+
+                else if (weapon.equalsIgnoreCase("Hutao's polearm")) {
+                    chp=4500000;
+                    oatk=10990;
+                    oes=60000;
+                    oqs=98000;
+                    idc=6;}
+                else if (weapon.equalsIgnoreCase("Yoemiya's bow")){
+                    chp=9900000;
+                    oatk=99990;
+                    oes=500000;
+                    oqs=1000000;
+                    idc=7;
+                }
+            }
+
+            else if(element.equalsIgnoreCase("2")){
+                weapon=cryo();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword"))
+                {chp=900000;
+                    oatk=5090; oes=80000;
+                    oqs=99999;
+                    idc=1;
+                }
+
+                else if (weapon.equalsIgnoreCase("Ayaka's longsword")){
+                    chp=5500000;
+                    oatk=97090;
+                    oes= 100000;
+                    oqs=980900;
+                    idc=8;}
+                else if(weapon.equalsIgnoreCase("Gaanyu's bow")){
+                    chp=9000000;
+                    oatk=9990;
+                    oes= 90000;
+                    oqs=98000;
+                    idc=9;}
+                else if (weapon.equalsIgnoreCase("Chongyun's greatsword")){
+                    chp=3000000;
+                    oatk=89990;
+                    oes= 60000;
+                    oqs=99000;
+                    idc=10;}
+
+                else if(weapon.equalsIgnoreCase("qiqi's catabook")){
+                    chp=9980900;
+                    oatk=99690;
+                    oes= 99990;
+                    oqs=908000;
+                    idc=11;}
+                else if (weapon.equalsIgnoreCase("Shenhe's polearm")) {
+                    chp=5800000;
+                    oatk=799990;
+                    oes=900000;
+                    oqs=980000;
+                    idc=12;}
+                else if (weapon.equalsIgnoreCase("Diona's bow")){
+                    chp=9600000;
+                    oatk=99990;
+                    oes= 65000;
+                    oqs=90000;
+                    idc=13;
+                }
+            }
+            else if(element.equalsIgnoreCase("3"))
+            {
+                weapon=hydro();
+                if(weapon.equalsIgnoreCase("Traveller's handy sword"))
+                {chp=900000;
+                    oatk=5090;
+                    oes=80000;
+                    oqs=99999;
+                    idc=1;
+                }
+                else if(weapon.equalsIgnoreCase("Ayato's longsword")){
+                    chp=9999998;
+                    oatk=65950;
+                    oes= 90000;
+                    oqs=980000;
+                    idc=14;}
+                else if (weapon.equalsIgnoreCase("Yelan's bow")){
+                    chp=7590000;
+                    oatk=96590;
+                    oes=90000;
+                    oqs=986000;
+                    idc=15;}
+
+                else if(weapon.equalsIgnoreCase("Neilu's greatsword")) {
+                    chp=759900;
+                    oatk=965990;
+                    oes= 900200;
+                    oqs=980300;
+                    idc=16;}
+                else if(weapon.equalsIgnoreCase("Mona's catabook")){
+                    chp=6900000;
+                    oatk=99090;
+                    oes= 900000;
+                    oqs=980990;
+                    idc=17;}
+                else if(weapon.equalsIgnoreCase("Barbara's polearm")) {
+                    chp=5700000;
+                    oatk=99990;
+                    oes= 90000;
+                    oqs=989000;
+                    idc=18;}
+                else if(weapon.equalsIgnoreCase("Tartagriya's bow")){
+                    chp=6800000;
+                    oatk=65090;
+                    oes=980000;
+                    oqs=999999;
+                    idc=19;}}
+            else if(element.equalsIgnoreCase("6"))
+            {
+                weapon=geo();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword"))
+                {chp=900000;
+                    oatk=5090;
+                    oes=80000;
+                    oqs=99999;
+                    idc=1;
+                }
+                else if(weapon.equalsIgnoreCase("Albedo's longsword")){
+                    chp=7560000;
+                    oatk=68090;
+                    oes=980000;
+                    oqs=900600;
+                    idc=20;}
+
+                else if (weapon.equalsIgnoreCase("Gouro's bow")) {
+                    chp=6950000;
+                    oatk=65090;
+                    oes=980000;
+                    oqs=859999;
+                    idc=21;}
+                else if (weapon.equalsIgnoreCase("Noele's greatsword")) {
+                    chp=8700000;
+                    oatk=780090;
+                    oes=650000;
+                    oqs=990000;
+                    idc=22;}
+                else if (weapon.equalsIgnoreCase("Ninguang's catabook")) {
+                    chp=8900000;
+                    oatk=70090;
+                    oes= 690000;
+                    oqs=708999;
+                    idc=23;}
+                else if (weapon.equalsIgnoreCase("Zhongli's polearm")){
+                    chp=9999997;
+                    oatk=70999;
+                    oes=980000;
+                    oqs=999999;
+                    idc=24;}
+                else if(weapon.equalsIgnoreCase("Yun Jin's bow")) {
+                    chp=7600000;
+                    oatk=70090;
+                    oes=90000;
+                    oqs=99999;
+                    idc=25;}
+            }
+            else if(element.equalsIgnoreCase("1"))
+            {
+                weapon=electro();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword"))
+                {chp=900000;
+                    oatk=5090;
+                    oes=80000;
+                    oqs=99999;
+                    idc=1;
+                }
+                else if(weapon.equalsIgnoreCase("Keqing's longsword")) {
+                    chp=1000000;
+                    oatk=799990;
+                    oes=659000; oqs=19999999;
+                    idc=26 ;}
+                else if (weapon.equalsIgnoreCase("Sara's bow")) {
+                    chp=6910000;
+                    oatk=65090;
+                    oes=980000;
+                    oqs=999999;
+                    idc=27;}
+                else if (weapon.equalsIgnoreCase("Beido's greatsword")){
+                    chp=6920000;
+                    oatk=65090;
+                    oes= 980000;
+                    oqs=999999;
+                    idc=28;}
+                else if(weapon.equalsIgnoreCase("Yae Miko's catabook")) {
+                    chp=6930000;
+                    oatk=65090;
+                    oes=980000;
+                    oqs=999999;
+                    idc=29;}
+                else if(weapon.equalsIgnoreCase("Raiden Shogan's polearm")) {
+                    chp=9999999;
+                    oatk=65090;
+                    oes=980000;
+                    oqs=9999999;
+                    idc=30;}
+                else if(weapon.equalsIgnoreCase("Fischel's bow")){
+                    chp=6960000;
+                    oatk=65090;
+                    oes=980000;
+                    oqs=999999;
+                    idc=31;
+                }
+            }
+
+            else if(element.equalsIgnoreCase("5"))
+            {
+                weapon=dendro();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword"))
+                {chp=900000;
+                    oatk=5090;
+                    oes=80000;
+                    oqs=99999;
+                    idc=1;
+                }
+
+                else if (weapon.equalsIgnoreCase("Kuki's longsword")){
+                    chp=6970000;
+                    oatk=65090;
+                    oes= 98000;
+                    oqs=99999;
+                    idc=32;}
+                else if(weapon.equalsIgnoreCase("Collei's bow")) {
+                    chp=6980000;
+                    oatk=65090;
+                    oes= 97000;
+                    oqs=97999;
+                    idc=33;}
+                else if(weapon.equalsIgnoreCase("Acra's greatsword")){
+                    chp=6850000;
+                    oatk=65090;
+                    oes= 980000;
+                    oqs=970000;
+                    idc=34;}
+                else if(weapon.equalsIgnoreCase("Aranara's catabook")){
+                    chp=6860000;
+                    oatk=65090;
+                    oes= 976000;
+                    oqs=979999;
+                    idc=35;}
+                else if(weapon.equalsIgnoreCase("Arino's polearm")) {
+                    chp=6870000;
+                    oatk=65090;
+                    oes= 980000;
+                    oqs=88999;
+                    idc=36;}
+                else{
+                    chp=6880000;
+                    oatk=65090;
+                    oes=980000; oqs=988999; idc=37;}
+            }
+            else{
+                System.out.println("Something went wrong, please try again!");
+                element=sc.next();} 
+            hpsub=hp;
+            chpsub=chp;
+        }
+        else {
+            System.out.println("Something went wrong, please try again!");
+            p="";
+            p=sc.next(); 
+            comp();
+        }
+        battlefield();
+    }
+
+    public void battlefield() throws InterruptedException{
+        Scanner sc=new Scanner(System.in);
+        if (p.equalsIgnoreCase("2")){ System.out.println("\f"); System.out.println("player");
+            for (int i=0;i<=hp/100000; i++)
+            {System.out.print((char)9608);
+                Thread.sleep(10);
+            }
+
+            System.out.println("\n");
+            System.out.println("Computer");
+            for (int j=0;j<=chp/100000;j++)
+            {System.out.print((char)9608);
+                Thread.sleep(10);}
+        }
+        else if(p.equalsIgnoreCase("1")){ 
+            System.out.println("\f"); 
+            System.out.println("player 1");
+            for (int i=0;i<=hp/100000;i++)
+            {System.out.print((char)9608);
+                Thread.sleep(10);
+            }
+            System.out.println("\n");
+            System.out.println("player 2");
+            for (int j=0;j<=chp/100000;j++)
+            {
+                System.out.print((char)9608);
+                Thread.sleep(10);
+            }
+        }
+        ystem.out.println("\n");
+        //while (hp>0&&hp>0) {
+        if(p.equalsIgnoreCase("2")) {
+            if(chp>0&&hp>0){
+                System.out.println("Enter attack (r/e/q)"); 
+                String in=sc.next();
+                if(in.equalsIgnoreCase("r")&&id==1)
+                {chp=chp=5090;}
+                else if(in.equalsIgnoreCase("e")&&id==1)
+                {chp-chp=80000; }
+                else if(in.equalsIgnoreCase("q")&&id==1)
+                {chp=chp=99999;}
+                else if(in.equalsIgnoreCase("r")&&id==2)
+                {chp-chp=10000; }
+                else if(in.equalsIgnoreCase("e")&&id==2)
+                {chp-chp=50000; }
+                else if(in.equalsIgnoreCase("q")&&id==2)
+                {chp=chp=95000;
+                    System.out.println("\f");
+                    System.out.println("    (  :");
+                    System.out.println("   __\\  \\ -----");
+                    System.out.println("  (____)  `|");
+                    System.out.println(" (____)|   |");
+                    System.out.println(" (____)·--|") ; 
+                    System.out.println("  (---)__.|_____") ; 
+                    Thread.sleep(2000);
+                }
+                else if(in.equalsIgnoreCase("r")&&id==3)
+                {chp=chp-9500;}
+                else if(in.equalsIgnoreCase("e")&&id==3)
+                {chp=chp-70000; }
+                else if(in.equalsIgnoreCase("q")&&id==3)
+                {chp=chp-98000;
+                    System.out.println("\f"); 
+                    System.out.println("\\\\\\\\'.______________________\\'-._");
+                    System.out.println("/////~~~~~~~~~~~~~~~~~~~~~~~~/.-' ");
+                    Thread.sleep(2000);}
+                else if(in.equalsIgnoreCase("r")&&id==4)
+                {chp=chp-70000; }
+                else if(in.equalsIgnoreCase("e")&&id==4)
+                {chp=chp-99000;}
+                else if(in.equalsIgnoreCase("q")&&id==4)
+                {chp=chp-10000; }
+                else if(in.equalsIgnoreCase("r")&&id==5)
+                {chp=chp-9990;}
+                else if(in.equalsIgnoreCasee("e")&&id==5)
+
+                {chp=chp-10000; }
+                else if(in.equalsIgnoreCase("r")&&id==5)
+                {chp=chp-9990;}
+                else if(in.equalsIgnoreCase("e")&&id==5)
+                {chp=chp-90000; }
+                else if(in.equalsIgnoreCase("q")&&id==5)
+                {chp=chp-98000;
+                    System.out.println("\f");
+                    System.out.println("     '        .         . ");
+                    System.out.println("     o     '  o .    '  . O");
+                    System.out.println("  '   . ' .  _____ '  .     .");
+                    System.out.println("  .     . .mMMMMMMMm. ' o    . '");
+                    System.out.println(" '   .  .MMXXXXXXXXXMM.   .   '");
+                    System.out.println(".    . /XX77:::::::77XX\\.   .   .");
+                    System.out.println("  o . ;X7:::''''''':::7X;   .  '");
+                    System.out.println("     .|::'.:'        '::| .   .  .");
+                    System.out.println("   .  ;:.:.            :;. o   .");
+                    System.out.println(" '   . \'.:            /.    '   .  ");
+                    System.out.println("   .    `.':.        .'.  '     .");
+                    System.out.println(" '   . ' .`-._____.-'  .  . '   .");
+                    System.out.println("  ' o   '  .  O  .   '  o    ' ");
+                    System.out.println("   . ' . ' . ' ' O  .  '  '    '");
+                    System.out.println("    . .   '    '  .  '   . '  '");
+                    System.out.println("     . .'..' . ' ' . . '.  . '");
+                    System.out.println("      `.':.'        ':'.'.'");   
+                    Thread.sleep(2000);}
+                else if(in.equalsIgnoreCase("r")&&id==6)
+                {chp=chp-10990;}
+                else if(in.equalsIgnoreCase("e")&&id==6)
+                {chp=chp-60000; }
+                else if(in.equalsIgnoreCase("q")&&id==6)
+                {chp=chp-98000;
+                    System.out.println("\f");
+                    System.out.println("     .-.");
+                    System.out.println("    (o o)");
+                    System.out.println(" /\\_.' '._/\\");
+                    System.out.println(" |         |");
+                    System.out.println("  \\       /");
+                    System.out.println("    \\    /`");
+                    System.out.println("  (__)  /");
+                    System.out.println("  `.__.'");
+                    Thread.sleep(2000);}
+                else if(in.equalsIgnoreCase("r")&&id==7)
+                {chp=chp-99990;} 
+                else if(in.equalsIgnoreCase("r")&&id==7)
+                {chp=chp-99998;}
+                else if(in.equalsIgnoreCase("e")&&id==7)
+                {chp=chp-50000;}
+                else if(in.equalsIgnoreCase("q")&&id==7)
+                {chp=chp-100000;
+                    System.out.println("\f");
+                    System.out.println("           ^^                   @@@@@@@@@");
+                    System.out.println("       ^^       ^^            @@@@@@@@@@@@@@@");
+                    System.out.println("                            @@@@@@@@@@@@@@@@@@             ^^ ");
+                    System.out.println("                           @@@@@@@@@@@@@@@@@@@@");
+                    System.out.println("~~~~ ~~ ~~~~~ ~~~~~~~~ ~~ &&&&&&&&&&&&&&&&&&&& ~~~~~~~ ~~~~~~~~~~~ ~~~");
+                    System.out.println(" ~         ~~   ~  ~       ~~~~~~~~~~~~~~~~~~~~ ~       ~~     ~~ ~");
+                    System.out.println("   ~      ~~      ~~ ~~ ~~  ~~~~~~~~~~~~~ ~~~~  ~     ~~~    ~ ~~~  ~ ~~");
+                    System.out.println("   ~  ~~     ~         ~      ~~~~~~  ~~ ~~~       ~~ ~ ~~  ~~ ~");
+                    System.out.println(" ~  ~       ~ ~      ~           ~~ ~~~~~~  ~      ~~  ~             ~~");
+                    System.out.println("       ~             ~        ~      ~      ~~   ~             ~}");
+                    Thread.sleep(2000);}
+                else if(in.equalsIgnoreCase("r")&&id==8)
+                {chp=chp-97090;}
+                else if(in.equalsIgnoreCase("e")&&id==8)
+                {chp=chp-100000; }
+                else if(in.equalsIgnoreCase("q")&&id==8)
+                {chp=chp-980900;
+                    System.out.println("\f");
+                    Systen.out.println("      /\\");
+                    System.out.println("__    \\/   __");
+                    System.out.println("\\_\\_\\/\\/_/_/");
+                    System.out.println("   _\\_\\/_/_");
+                    System.out.println(" _ _/_/\\_\\__");
+                    System.out.println("/_/ /\\/\\ \\_\\ ");
+                    System.out.println("      /\\ ");
+                    Sytem.out.println("       \\/");
+                    Thread.sleep(2000);}
+                else if(in.equalsIgnoreCase("r")&&id==9)
+                {chp=chp-9990;}
+                else if(in.equalsIgnoreCase("e")&&id==9)
+                {chp=chp-90000; }
+                else if(in.equalsIgnoreCase("q")&&id==9)
+                {hp=hp-98000;
+                    System.out.println("\f");
+                    System.out.println("     *                                                            *");
+                    System.out.println("                             aaaaaaaaaaaaaaaa               *");
+                    System.out.println("                         aaaaaaaaaaaaaaaaaaaaaaaa");
+                    System.out.println("                      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+                    System.out.println("                    aaaaaaaaaaaaaaaaa           aaaaaa");
+                    System.out.println("                  aaaaaaaaaaaaaaaa                  aaaa");
+                    System.out.println("                 aaaaaaaaaaaaa aa                      aa");
+                    System.out.println("*               aaaaaaaa      aa                         a");
+                    System.out.println("                aaaaaaa aa aaaa");
+                    System.out.println("          *    aaaaaaaaa     aaa");
+                    System.out.println("               aaaaaaaaaaa aaaaaaa                               *");
+                    System.out.println("               aaaaaaa    aaaaaaaaaa");
+                    System.out.println("               aaaaaa a aaaaaa aaaaaa");
+                    System.out.println("                aaaaaaa  aaaaaaa");
+                    System.out.println("                aaaaaaaa                                 a");
+                    System.out.println("                 aaaaaaaaaa                            aa");
+                    System.out.println("                  aaaaaaaaaaaaaaaa                  aaaa");
+                    System.out.println("                    aaaaaaaaaaaaaaaaa           aaaaaa        *");
+                    System.out.println("      *               aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+                    System.out.println("                         aaaaaaaaaaaaaaaaaaaaaaaa");
+                    System.out.println("                      *      aaaaaaaaaaaaaaaa");
+                    System.out.println("");
+
+                    Thread.sleep(20000);}
+                else if(in.equalsIgnoreCase("r")&&id==10)
+                {chp=chp-89990;}
+                else if(in.equalsIgnoreCase("e")&&id==10)
+                {chp=chp-60000;}
+                else if(in.equalsIgnoreCase("q")&&id==10) 
+                {chp=chp-99000;}
