@@ -1,0 +1,887 @@
+import java.util.*;
+public class project{
+
+    int hp;
+    int hpsub;
+
+    static int atk;
+
+    static int es ;
+
+    static int qs;
+
+    int chp;
+
+    int chpsub;
+
+    static int oatk;
+
+    static int oes;
+
+    static int oqs;
+
+    static int money1;
+
+    static int money2;
+
+    static String p="" ;
+
+    static String weapon="";
+
+    static int idc;
+
+    static int id;
+    public static void main() throws InterruptedException{
+        project ob= new project();
+        Scanner sc=new Scanner (System.in);
+        System.out.println("Enter 1 for player v player and 2 for player v computer");
+        p=sc.nextLine();
+        if(atk<=0&&oatk<=0){
+            System.out.println("player 1: Enter element!");
+            System.out.println("Electro:-1"); System.out.println("Cryo:-2"); System.out.println("Hydro: -3"); System.out.println("pyro: -4"); System.out.println("Dendero: -5"); System.out.println("Geo:-6");
+            String element= sc.nextLine();
+            String choice="";
+            if(element.equalsIgnoreCase("4"))
+            {
+                weapon= ob.pyro();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword"))
+                {ob.ths(900000);
+
+                }
+
+                else if(weapon.equalsIgnoreCase("Benny's longsword")) {ob.bls(6000000);
+                }
+                else if(weapon.equalsIgnoreCase("Amber's bow"))
+                {ob.ab(7500000);
+
+                }
+                else if(weapon.equalsIgnoreCase("Diluc's greatsword")) {ob.dg(1000000);
+                }
+
+                else if(weapon.equalsIgnoreCase("Yanfei's catabook")) {ob.ycb (5000000);
+                }
+                else if(weapon.equalsIgnoreCase("Hutao's polearm")) {ob.hpa (4500000);
+                }
+                else if (weapon.equalsIgnoreCase("Yoemiya's bow")) {ob.yb (9900000);
+                }}
+            else if(element.equalsIgnoreCase("2")){
+
+                weapon=ob.cryo();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword"))
+                {ob.ths (900000);
+                }
+                else if(weapon.equalsIgnoreCase("Ayaka's longsword")) {ob.als (5500000);
+
+                }
+
+                else if (weapon.equalsIgnoreCase("Gaanyu's bow")) {ob.gb(9000000);}
+                else if (weapon.equalsIgnoreCase("Chongyun's greatsword")) {ob.cgs (3000000);
+                }
+                else if(weapon.equalsIgnoreCase("qiqi's catabook")) {ob.qcb (9980900);
+
+                }
+
+                else if (weapon.equalsIgnoreCase("Shenhe's polearm")) {ob.spa (5800000);
+                }
+
+                else if (weapon.equalsIgnoreCase("Diona's bow")) {ob.db (9600000);
+                }}
+            else if(element.equalsIgnoreCase("3"))
+            {
+                weapon=ob.hydro();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword"))
+                {ob.ths (900000);
+                }
+                else if (weapon.equalsIgnoreCase("Ayato's longsword")){
+                    ob.atls (9999998);
+
+                }
+
+                else if (weapon.equalsIgnoreCase("Yelan's bow")) {ob.yeb (7590000);
+                }
+                else if(weapon.equalsIgnoreCase("Neilu's greatsword")) {ob.ngs (9759900);
+
+                }
+                else if(weapon.equalsIgnoreCase("Mona's catabook")) {ob.mcb (6900000);
+                }
+                else if (weapon.equalsIgnoreCase("Barbara's polearm")) {ob.bpa (5700000);
+                }
+                else if(weapon.equalsIgnoreCase("Tartagriya's bow"))
+                {ob.tb(6800000);
+                }
+            }
+            else if(element.equalsIgnoreCase("6"))
+            {
+                weapon=ob.geo();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword")) {ob.ths (900000);}
+                else if(weapon.equalsIgnoreCase("Albedo's longsword")) {ob.albedo (7560000);
+
+                }
+
+                else if(weapon.equalsIgnoreCase("Gouro's bow")) {
+                    ob.gob (6950000);}
+                else if (weapon.equalsIgnoreCase("Noele's greatsword")) {ob.nogs (8700000);
+                }
+                else if(weapon.equalsIgnoreCase("Ninguang's catabook")) {ob.ncb (8900000);
+                }
+                else if(weapon.equalsIgnoreCase("Zhongli's polearm")) {ob.zpa (9999997);}
+
+                else if(weapon.equalsIgnoreCase("Yun Jin's bow")) {ob.yjb (7600000);}
+            }
+            else if(element.equalsIgnoreCase("1"))
+            {
+                weapon=ob.electro();
+                if (weapon.equalsIgnoreCase("Traveller's handy sword")) {ob.ths (900000);
+
+                }
+                else if (weapon.equalsIgnoreCase("Keqing's longsword")) {ob.kl (1000000);
+                }
+                else if (weapon.equalsIgnoreCase("Sara's bow"))
+                {ob.sb (6910000);
+                }
+                else if (weapon.equalsIgnoreCase("Beido's greatsword")) {ob.bgs (6920000);}
+                else if(weapon.equalsIgnoreCase("Yae Miko's catabook")) {ob.ymc (6930000);}
+
+                else if (weapon.equalsIgnoreCase("Raiden Shogan's polearm"))
+                {ob.rspa (9999999);}
+                else if(weapon.equalsIgnoreCase("Fischel's bow")) {ob. fb (6960000);
+                }
+                else if(element.equalsIgnoreCase("5"))
+                {
+                    weapon=ob.dendro();}
+                else if (weapon.equalsIgnoreCase("Traveller's handy sword")){
+                    ob.ths (900000);}
+                else if(weapon.equalsIgnoreCase("Kuki's longsword")) {ob.kls (6970000);
+
+                }
+                else if (weapon.equalsIgnoreCase("Collei's bow")) {ob.cb(6980000);
+                }
+                else if (weapon.equalsIgnoreCase("Acra's greatsword"))
+                {ob.agss (6850000);
+
+                }
+
+                else if (weapon.equalsIgnoreCase("Aranara's catabook")) {ob.acb(6860000);
+                }
+                else if (weapon.equalsIgnoreCase("Arino's polearm")) {ob.apa (6870000);
+                }
+                else if(weapon.equalsIgnoreCase("Tighnari's bow")) {ob.tigb (6880000);
+                }else
+                {System.out.println("Something went wrong, please try again");
+                    main();}}}
+        ob.comp();
+    }
+
+    public String pyro() throws InterruptedException{
+        Scanner sc=new Scanner (System.in);
+        String gacha="";
+        String pyro[] = {"Traveller's handy sword","Benny's longsword",
+                "Amber's bow",
+                "Diluc's greatsword",
+                "Yanfei's catabook",
+                "Hutao's polearm",
+                "Yoemiya's bow"
+
+            };
+        int i=0;
+
+        int fates=10;
+        while(i<1&&fates>0){
+            System.out.println("\f"); double pull=Math.random()*6+1; 
+            gacha=pyro[ (int) pull];
+            for (int j=0;j<10;j++) {
+                System.out.print("*"); Thread.sleep(100);
+            }
+            System.out.println("\n");
+            System.out.println("Congratulations! You got "+gacha);
+            System.out.println("Do you wish to pull again? If yes, enter 0 else enter any other number greater than one");
+            fates= fates-1;
+        }
+        return(gacha);
+    }
+
+    public String cryo() throws InterruptedException{
+        Scanner sc=new Scanner(System.in);
+        String gacha="";
+        String pyro[]={"Traveller's handy sword",
+                "Ayaka's longsword",
+                "Gaanyu's bow",
+                "Chongyun's greatsword",
+                "qiqi's catabook",
+                "Shenhe's polearm",
+                "Diona's bow"};
+        int fates=10;
+        while(i<1&&fates>0) {
+            System.out.println("\f");
+            double pull=Math.random()*6+1; gacha=pyro[(int) pull];
+            for(int j=0;j<10;j++) {
+                int i=0;
+
+                System.out.print("*"); Thread.sleep(100);
+            }
+            System.out.println("\n");
+            System.out.println("Congratulations! You got "+gacha);
+            System.out.println("Do you wish to pull again? If yes, enter 0 else enter any other number greater than one"); 
+            i=sc.nextInt();
+        }
+        fates= fates-1;
+        return (gacha);
+    }
+
+    public String hydro() throws InterruptedException{
+        Scanner sc=new Scanner(System.in);
+        String gacha="";
+        String pyro[]={"Traveller's handy sword",
+                "Ayato's longsword",
+                "Yelan's bow",
+
+                "Neilu's greatsword",
+                "Mona's catabook",
+                "Barbara's polearm",
+                "Tartagriya's bow"};
+        int i=0;
+
+        int fates=10;
+        while(i<1&&fates>0){
+            System.out.println("\f");
+            double pull=Math.random()*6+1;
+            gacha=pyro[(int)pull];
+            for (int j=0;j<10;j++){
+                System.out.print("*"); Thread.sleep(100);
+            }
+            System.out.println("\n");
+            System.out.println("Congratulations! You got "+gacha);
+            System.out.println("Do you wish to pull again? If yes, enter 0 else enter any other number greater than one"); i=sc.nextInt();
+            fates=fates-1;
+        }
+        return (gacha);
+    }
+
+    public String geo() throws InterruptedException{
+        Scanner sc=new Scanner(System.in);
+        String gacha="";
+        String pyro[]={"Traveller's handy sword",
+                "Albedo's longsword",
+                "Gouro's bow",
+                "Noele's greatsword", "Ninguang's catabook", "Zhongli's polearm", "Yun Jin's bow"};
+        int i=0;
+        int fates=10;
+        while(i<1&&fates>0) {
+            System.out.println("\f");
+            double pull=Math.random()*6+1;
+            gacha=pyro[(int)pull];
+            for (int j=0;j<10;j++){
+                System.out.print("*");
+                Thread.sleep(100);
+            }
+            System.out.println("\n");
+            System.out.println("Congratulations! You got "+gacha);
+            System.out.println("Do you wish to pull again? If yes, enter 0 else enter any other number greater than one"); i=sc.nextInt();
+            fates=fates-1;
+        }
+        return(gacha);
+    }
+
+    public String electro() throws InterruptedException{
+        Scanner sc=new Scanner(System.in);
+        String gacha="";
+        String pyro[]={"Traveller's handy sword",
+                "Keqing's longsword",
+                "Sara's bow",
+                "Beido's greatsword",
+                "Yae Miko's catabook",
+                "Raiden Shogan's polearm",
+                "Fischel's bow"};
+        int i=0;
+        int fates=10;
+        while(i<1&&fates>0) {
+            System.out.println("\f");
+            double pull=Math.random()*6+1;
+            gacha=pyro[(int)pull];
+            for (int j=0;j<10;j++){
+                System.out.print("*"); Thread.sleep(100);
+            }
+            System.out.println("\n");
+            System.out.println("Congratulations! You got "+gacha);
+            System.out.println("Do you wish to pull again? If yes, enter 0 else enter any other number greater than one"); i=sc.nextInt();
+            fates=fates-1;
+        }
+        return(gacha);
+    }
+
+    public String dendro() throws InterruptedException{ Scanner sc=new Scanner(System.in);
+        String gacha="";
+        String pyro[] = {"Traveller's handy sword", "Kuki's longsword",
+                "Collei's bow",
+                "Acra's greatsword", "Aranara's catabook",
+                "Arino's polearm",
+                "Tighnari's bow"};
+        int i=0;
+        int fates=10;
+        while(i<1&&fates>0) {
+            System.out.println("\f");
+            double pull=Math.random()*6+1;
+            gacha=pyro[(int)pull];
+            for (int j=0;j<10;j++){
+                System.out.print("*"); Thread.sleep(100);
+            }
+            System.out.println("\n");
+            System.out.println("Congratulations! You got "+gacha);
+            System.out.println("Do you wish to pull again? If yes, enter 0 else enter any other number greater than one");
+            i=sc.nextInt();
+            fates=fates-1;
+
+        }
+        return(gacha);
+    }
+
+    public void ths (int ohp) throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=1;
+        hp=900000;
+        atk=5090;
+        es= 80000;
+
+        qs=99999;
+
+        int cri= 10/100*atk;
+        comp();
+        String idk="";
+
+    }
+
+    public void bls(int ohp) throws InterruptedException{ Scanner sc= new Scanner(System.in);
+        id=2;
+        hp=6000000;
+        atk=10000;
+        es= 50000;
+
+        qs=95000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void ab(int ohp) throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=3;
+        hp=7500000;
+        atk=9500;
+
+        es= 70000;
+
+        qs=98000;
+        int crit=10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void dg(int ohp) throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=4;
+        hp=1000000;
+
+        atk=70000;
+
+        es= 99000;
+
+        qs=10000;
+        int crit=10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void ycb(int ohp) throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=5;
+        hp=5000000;
+        atk=9990;
+        es= 90000;
+        qs=98000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void hpa(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=5;
+        hp=4500000;
+        atk=10990;
+        es= 60000;
+        qs=98000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void yb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=7;
+        hp=9900000;
+        atk=99990;
+        es= 500000;
+        qs= 1000000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void als(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=8;
+        hp=5500000;
+        atk=97090;
+        es= 100000;
+        qs=980900;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void gb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=9;
+        hp=9000000;
+        atk=9990;
+        es= 90000;
+        qs=98000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void cgs(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=10;
+        hp=3000000;
+        atk=89990;
+        es= 60000;
+        qs=99000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void qcb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=11;
+        hp=9980900;
+        atk=99690;
+        es= 99990;
+        qs=908000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void spa(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=12;
+        hp=5800000;
+        atk=799990;
+        es= 900000;
+        qs=980000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void db(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=13;
+        hp=9600000;
+        atk=99990;
+        es= 65000;
+        qs=90000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void atls(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=14;
+        hp=9999999;
+        atk=65950;
+        es= 90000;
+        qs=98000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void yeb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=15;
+        hp=7590000;
+        atk=96590;
+        es= 90000;
+        qs=986000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void ngs(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=16;
+        hp=7599900;
+        atk=965990;
+        es= 900200;
+        qs=980300;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void mcb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=17;
+        hp=6900000;
+        atk=99090;
+        es= 900000;
+        qs=980990;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void bpa(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=18;
+        hp=5700000;
+        atk=99990;
+        es= 90000;
+        qs=989000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void tb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=19;
+        hp=6900000;
+        atk=65090;
+        es= 980000;
+        qs=999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void albedo(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=20;
+        hp=7560000;
+        atk=68090;
+        es= 980000;
+        qs=900600;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void gob(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=21;
+        hp=6950000;
+        atk=65090;
+        es= 980000;
+        qs=859999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void nogs(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=22;
+        hp=8700000;
+        atk=780090;
+        es= 650000;
+        qs=990000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void ncb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=23;
+        hp=8900000;
+        atk=70090;
+        es= 690000;
+        qs=708999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void zpa(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=24;
+        hp=9999999;
+        atk=70999;
+        es= 980000;
+        qs=999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void yjb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=25;
+        hp=7600000;
+        atk=70090;
+        es= 90000;
+        qs=99999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void kl(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=26;
+        hp=1000000;
+        atk=799990;
+        es= 659000;
+        qs=19999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void sb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=27;
+        hp=6910000;
+        atk=65090;
+        es= 980000;
+        qs=999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void bgs(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=28;
+        hp=6920000;
+        atk=65090;
+        es= 980000;
+        qs=999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void ymc(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=29;
+        hp=6930000;
+        atk=65090;
+        es= 980000;
+        qs=999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void rspa(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=30;
+        hp=9999999;
+        atk=65090;
+        es= 980000;
+        qs=9999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void fb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=31;
+        hp=6960000;
+        atk=65090;
+        es= 980000;
+        qs=999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void kls(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=32;
+        hp=6970000;
+        atk=65090;
+        es= 98000;
+        qs=999999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void cb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=33;
+        hp=6980000;
+        atk=65090;
+        es= 97000;
+        qs=97999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void ags(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=34;
+        hp=6850000;
+        atk=65090;
+        es= 98000;
+        qs=970000;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void acb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=35;
+        hp=6860000;
+        atk=65090;
+        es= 976000;
+        qs=979999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void apa(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=36;
+        hp=6870000;
+        atk=65090;
+        es= 98000;
+        qs=88999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void tigb(int ohp)throws InterruptedException{
+        Scanner sc= new Scanner(System.in);
+        id=37;
+        hp=6880000;
+        atk=65090;
+        es= 98000;
+        qs=988999;
+        int crit= 10/100*atk;
+        comp();
+        String idk="";
+    }
+
+    public void comp()throws InterruptedException{
+        System.out.println("comp");
+        Scanner sc=new Scanner(System.in);
+        double rand= Math.random()*6+1;
+        String choice="";
+        String weapon="";
+        project ob= new project();
+        if(p.equalsIgnoreCase("2"))
+        {
+            System.out.println("comp:");
+            if((int)rand==1){
+                choice=pyro();}
+            else if((int)rand==2){
+                choice=cryo();}
+            else if((int)rand==3){
+                choice=hydro();}
+            else if((int)rand==4){
+                choice=geo();}
+            else if((int)rand==5){
+                choice=electro();}
+            else if((int)rand==6){
+                choice=dendro();}
+
+            if(choice.equalsIgnoreCase("Traveller's handy sword")){
+                chp=900000;
+                idc=1;}
+            else if(choice.equalsIgnoreCase("Benny's longsword")){
+                chp=6000000;
+                idc=2;}
+            else if(choice.equalsIgnoreCase("amber's bow")){
+                chp=7500000;
+                idc=3;
+            }
+            else if(choice.equalsIgnoreCase("diluc's greatsword")){
+                chp=1000000;
+                idc=4;}
+            else if(choice.equalsIgnoreCase("yanfei's cayabook")){
+                chp=5000000;
+                idc=5;
+            }
+            else if(choice.equalsIgnoreCase("Hutao's polearm")){
+                chp=4500000;
+                idc=6;
+            }
+            else if(choice.equalsIgnoreCase("yoemiya's bow")){
+                chp=9900000;
+                idc=7;
+            }
+            else if(choice.equalsIgnoreCase("ayaka's longsword")){
+                chp=5500000;
+                idc=8;
+            }
+            else if(choice.equalsIgnoreCase("gaanyu's bow")){
+                chp=9000000;
+                idc=9;
+            }
+            else if(choice.equalsIgnoreCase("chongyun's greatsword")){
+                chp=3000000;
+                idc=10;
+            }
+            else if(choice.equalsIgnoreCase("qiqi's catbook")){
+                chp=9980900;
+                idc=11;
+            }
+            else if(choice.equalsIgnoreCase("shenhe's polearm")){
+                chp=5800000;
+                idc=12;
+            }
+            else if(choice.equalsIgnoreCase("Diona's bow")){
+                chp=9600000;
+                idc=13;
+            }
+            else if(choice.equalsIgnoreCase("Ayato's longsword")){
+                chp=9999998;
+                idc=14;
+            }
+            else if(choice.equasIgnoreCase("yelan's bow")){
+                chp=7490000;
+                idc=15;
+            }
+            else if(choice.equalsIgnoreCase("neilu's greatsword")){
+                chp=759900;
+                idc=16;
+            }
+            else if(choice.equalsIgnoreCase("mona's catbook")){
+                chp=6900000;
+                idc=17;
+            }
+            else if(choice.equalsIgnoreCase("barbara's polearm")){
+                chp=5700000;
+                idc=18;
+            }
+            else if(choice.equalsIgnoreCase("tartagliya's bow")){
+                chp=6800000;
+            }
+            else if(choice.equalsIgnoreCase("albedo's longsword")){
+                chp=7560000;
+                idc=20;
